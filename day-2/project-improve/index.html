@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 2 | Improve skills</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Improve Skills Coding to Backend Developer</h1>
+        <p>
+          Improve Javascript and HTML languange skills with just basic teachings
+        </p>
+      </div>
+      <div class="content">
+        <fieldset>
+          <legend style="font-size: 20px; font-weight: bold">
+            Booking Ticket
+          </legend>
+          <form action="">
+            <label for="nama">Registrasi Nama:</label>
+            <input
+              type="text"
+              id="nama"
+              name="nama"
+              placeholder="Isi nama mu"
+            />
+            <br />
+
+            <label for="umur">Registrasi Umur:</label>
+            <input
+              type="text"
+              id="umur"
+              name="umur"
+              placeholder="Isi umur  mu"
+            />
+            <br />
+
+            <label for="waktu-booking">Waktu Booking:</label>
+            <input type="datetime-local" id="waktuBooking" />
+            <br />
+
+            <br />
+            <button type="button" onclick="pesanTiket()">Pesan Tiket</button>
+
+            <p>Menuju waktu booking:</p>
+            <p id="countdown">00:00:00</p>
+          </form>
+        </fieldset>
+
+        <!-- card nya -->
+        <div id="jadwalBooking"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
